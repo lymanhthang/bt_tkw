@@ -15,7 +15,7 @@ function loadNews() {
             h += `
             <li class="post"><a href="${p.link}">
                     <div class="flex flexCol">
-                        <div class="thumb"><img src="/image/${p.img}" alt="img" ></div>
+                        <div class="thumb"><img src="image/${p.img}" alt="img" ></div>
                         <div class="flex flexCol">
                             <label>${p.label}</label>
                             <h4>${p.title}</h4>
