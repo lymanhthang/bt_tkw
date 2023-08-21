@@ -9,7 +9,7 @@ $(document).ready(function() {
     })
 })
 function loadNews() {
-    fetch("/JSON/data.json").then(res => res.json()).then(data => {
+    fetch("JSON/data.json").then(res => res.json()).then(data => {
         let h ="";
         for(let p of data)
             h += `
