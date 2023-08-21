@@ -71,7 +71,7 @@ div.navMenu > ul > li > a, .submenu > li > a, .m_menu a  {
     display: block;
     padding: 20px 8px;
     color: #c1c8e4;
-    font-size: 17px;
+    font-size: 20px;
     position: relative;
 }
 div.navMenu > ul > li > a::after, .submenu > li > a::after {
@@ -79,7 +79,7 @@ div.navMenu > ul > li > a::after, .submenu > li > a::after {
     position: absolute;
     width: 0%;
     height: 6px;
-    bottom: -5px;
+    bottom: -2px;
     left: 0px;
     background-color: #8860d0;
     transition: width, 0.5s;
@@ -130,7 +130,7 @@ div.navMenu > ul > li > a:hover::after, .submenu > li > a:hover::after {
 .m_menu {
     background-color: white;
     background-color: #5f85f7;
-    width: 300px;
+    width: 255px;
     position: fixed;
     top: 0;
     right: 0;
@@ -173,7 +173,7 @@ div.navMenu > ul > li > a:hover::after, .submenu > li > a:hover::after {
     margin-right: 0;
 }
 body {
-    background-image: url(https://lymanhthang.github.io/bt_tkw/image/web-bg.jpg);
+    background-image: url(/image/web-bg.jpg);
     background-attachment: fixed;
     background-size: cover;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -448,19 +448,19 @@ ul.allnews > li {
     transition: 0.3s ease;
 }
 .documents .card1 .pic {
-    background-image: url(https://lymanhthang.github.io/bt_tkw/image/cf_python.jpg);
+    background-image: url(/image/cf_python.jpg);
 }
 .documents .card2 .pic {
-    background-image: url(https://lymanhthang.github.io/bt_tkw/image/python_book_2.jpg);
+    background-image: url(/image/python_book_2.jpg);
 }
 .documents .card3 .pic {
-    background-image: url(https://lymanhthang.github.io/bt_tkw/image/python_thinkdps.jpg);
+    background-image: url(/image/python_thinkdps.jpg);
 }
 .documents .card4 .pic {
-    background-image: url(https://lymanhthang.github.io/bt_tkw/image/python_machine_learning.jpg);
+    background-image: url(/image/python_machine_learning.jpg);
 }
 .documents .card5 .pic {
-    background-image: url(https://lymanhthang.github.io/bt_tkw/image/pygame.jpg);
+    background-image: url(/image/pygame.jpg);
 }
 .documents .card:hover button {
     transform: scale(17.5);
@@ -611,22 +611,28 @@ div.article > p {
 .aside_right h2 {
     font-size: 2rem;
 }
-.aside_right ul {
+.aside_right ul, .popular_arti ul {
     list-style: none;
 }
-.aside_right ul li a {
+.aside_right ul li a, .popular_arti ul li a {
     text-decoration: none;
     color: black;
     font-size: 1.2rem;
     align-items: center;
     justify-content: center;
 }
-.aside_right ul li a span {
+.aside_right ul li a span, .popular_arti ul li a span {
     font-size: 3.5rem;
     padding-right: 15px;
 }
 .aside_right ul li a h3 {
     font-weight: 300;
+}
+.aside_left_m {
+    display: none;
+}
+.popular_arti {
+    display: none;
 }
 /*----------------------*/
 footer {
@@ -640,9 +646,6 @@ footer > h1 {
     font-size: larger;
     padding: 20px;
     text-align: center;
-}
-.text h2 {
-    font-size: 20px;
 }
 .contact {
     width: 25%;
@@ -722,5 +725,76 @@ div.icons > div > a:hover > i {
     }
     .icons i {
         font-size: small;
+    }
+    /*news_page*/
+    .header .heading {
+        font-size: 20px;
+    }
+    .aside_right {
+        display: none;
+    }
+    .child_1 {
+        width: 100%;
+    }
+    .aside_left {
+        display: none;
+    }
+    .aside_child_2-article {
+        display: block;
+        width: 100%;
+    }
+    .article {
+        width: 100% !important;
+        line-height: 1.5;
+    }
+    .article h2 {
+        font-size: 18px;
+    }
+    .article p {
+        font-size: 15px !important;
+    }
+    .aside_left_m {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+    }
+    .aside_left_m > .author {
+        max-width: 20%;
+        padding-left: 15px;
+    }
+    .aside_left_m > .icons {
+        width: 80%;
+        padding-right: 15px;
+    }
+    .aside_left_m > div.author > div.image > img {
+        width: 80px;
+        aspect-ratio: 1/1;
+    }
+    .icons {
+        justify-content: space-between;
+    }
+    .icons .text {
+        padding-bottom: 15px;
+    }
+    #icons {
+        width: 100%;
+        height: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        padding-left: 15px;
+    }
+    #icons i {
+        font-size: 30px;
+        color: grey;
+    }
+    .popular_arti {
+        margin-top: 15px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
