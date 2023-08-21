@@ -448,19 +448,19 @@ ul.allnews > li {
     transition: 0.3s ease;
 }
 .documents .card1 .pic {
-    background-image: url(/image/cf_python.jpg);
+    background-image: url(image/cf_python.jpg);
 }
 .documents .card2 .pic {
-    background-image: url(/image/python_book_2.jpg);
+    background-image: url(image/python_book_2.jpg);
 }
 .documents .card3 .pic {
-    background-image: url(/image/python_thinkdps.jpg);
+    background-image: url(image/python_thinkdps.jpg);
 }
 .documents .card4 .pic {
-    background-image: url(/image/python_machine_learning.jpg);
+    background-image: url(image/python_machine_learning.jpg);
 }
 .documents .card5 .pic {
-    background-image: url(/image/pygame.jpg);
+    background-image: url(image/pygame.jpg);
 }
 .documents .card:hover button {
     transform: scale(17.5);
