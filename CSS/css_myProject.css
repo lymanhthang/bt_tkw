@@ -71,7 +71,7 @@ div.navMenu > ul > li > a, .submenu > li > a, .m_menu a  {
     display: block;
     padding: 20px 8px;
     color: #c1c8e4;
-    font-size: 20px;
+    font-size: 17px;
     position: relative;
 }
 div.navMenu > ul > li > a::after, .submenu > li > a::after {
@@ -646,6 +646,9 @@ footer > h1 {
     font-size: larger;
     padding: 20px;
     text-align: center;
+}
+.test h2 {
+    font-size: 20px;
 }
 .contact {
     width: 25%;
