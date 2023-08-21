@@ -79,7 +79,7 @@ div.navMenu > ul > li > a::after, .submenu > li > a::after {
     position: absolute;
     width: 0%;
     height: 6px;
-    bottom: -2px;
+    bottom: -3px;
     left: 0px;
     background-color: #8860d0;
     transition: width, 0.5s;
@@ -173,7 +173,7 @@ div.navMenu > ul > li > a:hover::after, .submenu > li > a:hover::after {
     margin-right: 0;
 }
 body {
-    background-image: url(/image/web-bg.jpg);
+    background-image: url(image/web-bg.jpg);
     background-attachment: fixed;
     background-size: cover;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -647,11 +647,9 @@ footer > h1 {
     padding: 20px;
     text-align: center;
 }
-.test h2 {
-    font-size: 20px;
-}
 .contact {
-    width: 25%;
+    width: 100%;
+    justify-content: center;
 }
 div.icons > div > a {
     display: block;
@@ -719,15 +717,14 @@ div.icons > div > a:hover > i {
     footer {
         font-size: 0.8rem;
     }
-    .contact > div.text {
-        min-width: 65%;
-    }
-    .contact {
-        padding: 10px;
-        justify-content: space-around !important;
-    }
     .icons i {
         font-size: small;
+    }
+    .contact .text {
+        width: 35%;
+    }
+    .contact h2 {
+        font-size: 20px;
     }
     /*news_page*/
     .header .heading {
