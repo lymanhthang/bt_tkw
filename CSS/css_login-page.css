@@ -1,0 +1,235 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  h1, h2 {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-size: 48px;
+    text-align: center;
+    text-shadow: 4px 4px 6px rgb(0, 0, 0 ,0.7);
+  }
+  h2 {
+    color: rgb(0,172,193);
+    text-shadow: 4px 4px 5px rgb(84, 58, 183 ,0.8);
+  }
+  p {
+    font-family: "Lato", sans-serif;
+    letter-spacing: 1px;
+    font-size: 14px;
+    color: #333333;
+  }
+  
+  .header {
+    position: relative;
+    text-align: center;
+    background: linear-gradient(
+      60deg,
+      rgba(84, 58, 183, 1) 0%,
+      rgba(0, 172, 193, 1) 100%
+    );
+    color: white;
+  }
+  
+  .inner-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 60vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .waves {
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    margin-bottom: -7px;
+    min-height: 100px;
+    max-height: 150px;
+  }
+  
+  section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    /* background: url(/mySpace/webProject/image/web-bg.jpg) no-repeat; */
+    /* background-size: cover;
+    background-position: center; */
+}
+.login_box,
+.register_box {
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background-color: transparent;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+}
+.login_box h2,
+.register_box h2 {
+    font-size: 2em;
+    color: white;
+    text-align: center;
+}
+.input_box {
+    position: relative;
+    width: 310px;
+    margin: 30px 0;
+    border-bottom: 2px solid white;
+}
+.input_box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: white;
+    pointer-events: none;
+    transition: 0.5s;
+}
+.input_box input {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(0,0,0,0);
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: white;
+    padding: 0 35px 0 5px;
+}
+.input_box .icon {
+    position: absolute;
+    right: 8px;
+    color: white;
+    font-size: 1.2em;
+    line-height: 57px;
+}
+.input_box input:focus~label,
+.input_box input:valid~label {
+    top: -5px;
+}
+.remember_forgot {
+    margin: -15px 0 15px;
+    font-size: 0.9em;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.remember_forgot label input {
+    margin-right: 3px;
+}
+.remember_forgot a {
+    color: white;
+    text-decoration: none;
+}
+.remember_forgot a:hover {
+    text-decoration: underline;
+}
+.login_box .submit,
+.register_box .submit {
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.register_box .submit label {
+    color: black;
+}
+.login_box > form > .submit > a {
+    text-decoration: none;
+    text-align: center;
+    font-size: 1em;
+    color: black;
+    font-weight: 500;
+    padding: 20px 120px;
+}
+.register {
+    font-size: 0.9em;
+    color: white;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+.register p label {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+.register p label:hover {
+    text-decoration: underline;
+}
+.register_box {
+    display: none;
+    opacity: 0;
+}
+
+#cl-op_reg_box {
+    display: none;
+}
+#cl-op_reg_box:checked~.register_box {
+    display: flex;
+    opacity: 1;
+}
+#cl-op_reg_box:checked~.login_box {
+    display: none;
+    opacity: 0;
+}
+  /* Animation */
+  
+  .parallax > use {
+    animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+  }
+  .parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+  }
+  .parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+  }
+  .parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+  }
+  .parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+  }
+  @keyframes move-forever {
+    0% {
+      transform: translate3d(-90px, 0, 0);
+    }
+    100% {
+      transform: translate3d(85px, 0, 0);
+    }
+  }
+  /*reponsive for mobile*/
+  @media (max-width: 768px) {
+    .waves {
+      height: 40px;
+      min-height: 40px;
+    }
+    h1 {
+      font-size: 24px;
+    }
+  }
+  
