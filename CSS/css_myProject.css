@@ -71,7 +71,7 @@ div.navMenu > ul > li > a, .submenu > li > a, .m_menu a  {
     display: block;
     padding: 20px 8px;
     color: #c1c8e4;
-    font-size: 20px;
+    font-size: 17px;
     position: relative;
 }
 div.navMenu > ul > li > a::after, .submenu > li > a::after {
@@ -79,7 +79,7 @@ div.navMenu > ul > li > a::after, .submenu > li > a::after {
     position: absolute;
     width: 0%;
     height: 6px;
-    bottom: -2px;
+    bottom: -5px;
     left: 0px;
     background-color: #8860d0;
     transition: width, 0.5s;
@@ -173,7 +173,7 @@ div.navMenu > ul > li > a:hover::after, .submenu > li > a:hover::after {
     margin-right: 0;
 }
 body {
-    background-image: url(image/web-bg.jpg);
+    background-image: url(https://lymanhthang.github.io/bt_tkw/image/web-bg.jpg);
     background-attachment: fixed;
     background-size: cover;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
